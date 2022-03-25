@@ -107,7 +107,7 @@
 
 .news_image {
   width: 100%;
-  height: 270px;
+  height: 200px;
   margin-bottom: 10px;
   object-fit: cover;
 }
@@ -190,6 +190,22 @@
 .social_link:hover {
   stroke: currentColor;
   fill: currentColor;
+}
+
+.preload {
+  background-image: url('../img/preload.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 @media (max-width: 768px) {
